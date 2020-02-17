@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "user")
 public class UserController {
 	
-	@Value(value = "foo")
+	@Value(value = "${foo}")
 	private String foo;
 	
 	@GetMapping(value = "greeting")
